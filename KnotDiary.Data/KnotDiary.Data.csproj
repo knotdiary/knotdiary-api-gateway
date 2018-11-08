@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KnotDiary.Common\KnotDiary.Common.csproj" />
+    <ProjectReference Include="..\KnotDiary.Models\KnotDiary.Models.csproj" />
+  </ItemGroup>
+
+</Project>

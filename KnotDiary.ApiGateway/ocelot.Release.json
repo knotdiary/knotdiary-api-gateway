@@ -1,0 +1,129 @@
+﻿{
+  "ReRoutes": [
+    // user api endpoints
+    {
+      "DownstreamPathTemplate": "/api/user/{username}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "KnotDiary-api-users",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/user/{username}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/{username}/avatar",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "KnotDiary-api-users",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/user/{username}/avatar",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KnotDiary",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/{username}/background",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "KnotDiary-api-users",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/user/{username}/background",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KnotDiary",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/{username}/password",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "KnotDiary-api-users",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/user/{username}/password",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KnotDiary",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "KnotDiary-api-users",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/user",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KnotDiary",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "KnotDiary-api-users",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/user",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KnotDiary",
+        "AllowedScopes": []
+      }
+    },
+    // auth endpoints
+    {
+      "DownstreamPathTemplate": "/connect/token",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "KnotDiary-api-auth",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/auth/login",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/user",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "KnotDiary-api-auth",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/user",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "KnotDiary",
+        "AllowedScopes": []
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://KnotDiary-api-users:8001"
+  }
+}

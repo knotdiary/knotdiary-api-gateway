@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnotDiary.Models", "KnotDiary.Models\KnotDiary.Models.csproj", "{94AA4FA7-46C4-4860-B2AF-0A59A164D06E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnotDiary.Services", "KnotDiary.Services\KnotDiary.Services.csproj", "{C5E3994A-200C-45F7-8CB4-D6642F192765}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnotDiary.Common", "KnotDiary.Common\KnotDiary.Common.csproj", "{CB7F5FE7-6ACC-4F4A-8669-A56A7BF29784}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnotDiary.Data", "KnotDiary.Data\KnotDiary.Data.csproj", "{9F184EC2-6C30-47E4-A0DC-32F4FECE0937}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnotDiary.Common.Web", "KnotDiary.Common.Web\KnotDiary.Common.Web.csproj", "{8EFE6305-744F-4638-9C1A-EB688B47EE01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnotDiary.ApiGateway", "KnotDiary.ApiGateway\KnotDiary.ApiGateway.csproj", "{7822ABCF-9472-4F1D-94E9-380F969681E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94AA4FA7-46C4-4860-B2AF-0A59A164D06E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94AA4FA7-46C4-4860-B2AF-0A59A164D06E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94AA4FA7-46C4-4860-B2AF-0A59A164D06E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94AA4FA7-46C4-4860-B2AF-0A59A164D06E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5E3994A-200C-45F7-8CB4-D6642F192765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5E3994A-200C-45F7-8CB4-D6642F192765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5E3994A-200C-45F7-8CB4-D6642F192765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5E3994A-200C-45F7-8CB4-D6642F192765}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB7F5FE7-6ACC-4F4A-8669-A56A7BF29784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB7F5FE7-6ACC-4F4A-8669-A56A7BF29784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB7F5FE7-6ACC-4F4A-8669-A56A7BF29784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB7F5FE7-6ACC-4F4A-8669-A56A7BF29784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F184EC2-6C30-47E4-A0DC-32F4FECE0937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F184EC2-6C30-47E4-A0DC-32F4FECE0937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F184EC2-6C30-47E4-A0DC-32F4FECE0937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F184EC2-6C30-47E4-A0DC-32F4FECE0937}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EFE6305-744F-4638-9C1A-EB688B47EE01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EFE6305-744F-4638-9C1A-EB688B47EE01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EFE6305-744F-4638-9C1A-EB688B47EE01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EFE6305-744F-4638-9C1A-EB688B47EE01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7822ABCF-9472-4F1D-94E9-380F969681E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7822ABCF-9472-4F1D-94E9-380F969681E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7822ABCF-9472-4F1D-94E9-380F969681E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7822ABCF-9472-4F1D-94E9-380F969681E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAD8C3B2-D2E9-4780-B9F8-3243599C36A2}
+	EndGlobalSection
+EndGlobal

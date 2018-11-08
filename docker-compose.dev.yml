@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+  knotdiary-api-users:
+    image: jsnmgpnty/knotdiary-api-users
+    ports:
+      - "6002:80"
+    networks:
+      - knotdiary-network
+    environment:
+      - 'StorageConnectionString=${StorageConnectionString}'
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
+  knotdiary-api-auth:
+    image: jsnmgpnty/knotdiary-api-auth
+    ports:
+      - "6003:80"
+    networks:
+      - knotdiary-network
+    environment:
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
+  knotdiary-api-gateway:
+    image: jsnmgpnty/knotdiary-api-gateway
+    ports:
+      - "8001:80"
+    networks:
+      - knotdiary-network
+    environment:
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
+networks:
+  knotdiary-network:
+    driver: bridge
